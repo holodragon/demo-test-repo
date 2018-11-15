@@ -34,6 +34,7 @@ oc expose svc openface
 oc expose dc openface --name=ws
 
 //update the hostname to suit your environment
+
 oc expose svc ws --hostname=openface-ws.cloudapps-ocp37-wohshon.ddns.net --port=443 --name=ws-route
 
 //deploy user service
