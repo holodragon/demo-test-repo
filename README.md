@@ -2,8 +2,11 @@
 //as admin, create project and svc account to get a openface docker deployed
 
 oc adm new-project openface-demo --admin=<your user id>
+  
 oc project openface-demo
+
 oc create serviceaccount useroot
+
 oc adm policy add-scc-to-user anyuid -z useroot
 
 //switch to normal user id
